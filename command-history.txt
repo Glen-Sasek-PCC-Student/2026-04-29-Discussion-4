@@ -1,0 +1,21 @@
+cat > test-1.txt
+cat > test-2.txt
+g++ main.cpp && for t in test*.txt; do echo -e "\n$t\n\n"; ./a.out < $t; done ; rm ./a.out
+clear
+g++ main.cpp && for t in test*.txt; do echo -e "\n$t"; ./a.out < $t; done ; rm ./a.out
+clear
+g++ main.cpp && for t in test*.txt; do echo -e "\n$t"; ./a.out < $t; done ; rm ./a.out
+clear
+g++ main.cpp && for t in test*.txt; do echo -e "\n$t"; ./a.out < $t; done ; rm ./a.out
+clear
+g++ main.cpp && for t in test*.txt; do echo -e "\n$t"; ./a.out < $t; done ; rm ./a.out
+clear
+g++ main.cpp && for t in test*.txt; do echo -e "\n$t"; ./a.out < $t; done ; rm ./a.out
+clear
+g++ main.cpp && for t in test*.txt; do echo -e "\n$t"; ./a.out < $t; done ; rm ./a.out
+history > command-history.txt
+rm command-history.txt 
+history -a
+cp ~/.bash_history > command-history.txt
+history -aw
+history -w
